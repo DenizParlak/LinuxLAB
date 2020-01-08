@@ -50,6 +50,10 @@ Not: Bu soruda ikinci bir grup eklenmesi istenmiyor, doğrudan primary grup değ
 
 ## Level 3
 
+Her Salı gecesi 00:45'te /home/artemis/level1/dosyalar dizini içindeki klasörleri temizleyen bir cronjob oluşturun.
+
+## Çözüm
+
 ```
 45 0 * * 2 rm -rf /home/artemis/level1/dosyalar/*
 ```
