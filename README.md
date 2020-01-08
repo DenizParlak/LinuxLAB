@@ -4,7 +4,8 @@ Bu simülasyon, her seviyeden Linux kullanıcılarının kendilerini test etmesi
 
 LAB ortamına erişmek için Docker kullanmanız gerekmektedir. Komut:
 
-```docker run -ti denizparlak/lab
+```
+docker run -ti denizparlak/lab
 ```
 
 ## Level 1
@@ -41,17 +42,23 @@ Sistemde “hypnos” isimli bir kullanıcı bulunmaktadır. Göreviniz herhangi
 
 ## Çözüm
 
-```usermod -c “test” -u 1010 -d /home/hypnos2 -g artemis -s /bin/sh hypnos```
+```
+usermod -c “test” -u 1010 -d /home/hypnos2 -g artemis -s /bin/sh hypnos
+```
 
 Not: Bu soruda ikinci bir grup eklenmesi istenmiyor, doğrudan primary grup değiştiriliyor.
 
 ## Level 3
 
-```45 0 * * 2 rm -rf /home/artemis/level1/dosyalar/*```
+```
+45 0 * * 2 rm -rf /home/artemis/level1/dosyalar/*
+```
 
 veya
 
-```45 0 * * TUE rm -rf /home/artemis/level1/dosyalar/*```
+```
+45 0 * * TUE rm -rf /home/artemis/level1/dosyalar/*
+```
 
 ## Level 4
 
@@ -65,7 +72,8 @@ Bir metin dosyası içerisinde bulunan 4 segmentli, toplamda 16 karakterli bir n
 
 Yine birçok farklı yolu var. Örnek bir script:
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 numbers=cc
 declare -a arrV
@@ -89,7 +97,8 @@ Bu soruda biraz kafa karışıklığı olmuş. Beklenen direkt metin dosyasında
 
 Direkt sudoers dosyasına eklemek için:
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 users=b
 
