@@ -1,6 +1,11 @@
 # LinuxLAB
 
-Öncelikle ilginiz için teşekkürler, 3 haftada 1200 civarında tekil kullanım olmuş. Bazı soruların çözümü için birden çok farklı yol var, hepsini yazmayacağım 🙂
+Bu simülasyon, her seviyeden Linux kullanıcılarının kendilerini test etmesi amacıyla hazırlanmıştır. "Şu şekilde de çözülebilirdi" dediğiniz cevaplarınız varsa gönderebilirsiniz.
+
+LAB ortamına erişmek için Docker kullanmanız gerekmektedir. Komut:
+
+```docker run -ti denizparlak/lab
+```
 
 ## Level 1
 
@@ -180,7 +185,8 @@ Son seçenekte istenen anlaşılmamış 🙂 “Tüm” karakterler arasında �
 
 <img src="https://github.com/DenizParlak/LinuxLAB/blob/master/3.png" width="500">
 
-```sed -e ‘s/(.)/\1 /g’ nevermind
+```
+sed -e ‘s/(.)/\1 /g’ nevermind
 ```
 
 Tekrardan teşekkürler, devamı gelecek.
