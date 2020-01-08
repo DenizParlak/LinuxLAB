@@ -139,9 +139,9 @@ Editör kullanmadan, sadece komut satırından aşağıdaki SSH değişiklikleri
 
 ## Çözüm
 
-Bu soruda da neredeyse herkes “#” karakterini dahil etmeden çözüm göndermiş, beklenen aktif olarak kullanılabilecek hale getirilmesiydi ki bunu benim belirtmem gerekiyordu.
+Bu soruda da neredeyse herkes işin kolayına kaçıp “#” karakterini dahil etmeden çözüm göndermiş :) Beklenen, değişikliklerin aktif olarak kullanılabilecek hale getirilmesiydi ki bunu benim belirtmem gerekiyordu sanırım.
 
-Bu soruda halletmeniz gereken ikinci problem, yaptığınız değişiklikler dosyadaki tüm match olan satırları değiştireceği için (e.g Port 29 – Port 29), istenilen değişikliklerin sadece birinci veya ikinci eşleşmede yapılması gerekliydi. Bu durum MaxAuthTries ve MaxSessions için geçerli değil.
+Soruda halledilmesi gereken ikinci problem, yaptığınız değişiklikler dosyadaki tüm match olan satırları değiştireceği için (e.g Port 29 – Port 29), istenilen değişikliklerin sadece birinci veya ikinci eşleşmede yapılması gerekliydi. Bu durum MaxAuthTries ve MaxSessions için geçerli değil.
 
 ```
 sed -i '0,/.*PermitRootLogin.*/ s/.*PermitRootLogin.*/PermitRootLogin no/' /etc/ssh/sshd_config
