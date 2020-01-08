@@ -1,6 +1,6 @@
-# LinuxLAB
+# Linux LAB
 
-Bu simülasyon, her seviyeden Linux kullanıcılarının kendilerini test etmesi amacıyla hazırlanmıştır. "Şu şekilde de çözülebilirdi" dediğiniz cevaplarınız varsa gönderebilirsiniz.
+Bu simülasyon, her seviyeden Linux kullanıcısının kendisini test etmesi amacıyla hazırlanmıştır. "Şu şekilde de çözülebilirdi" dediğiniz cevaplarınız varsa gönderebilirsiniz.
 
 LAB ortamına erişmek için Docker kullanmanız gerekmektedir. Komut:
 
